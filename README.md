@@ -76,31 +76,7 @@ interface wlan0
 fallback static_wlan0
 ```
 
-11.	Use `sudo raspi-config` and change the password and timezone of the board.  Also change the Hostname under Network Options to ‘ValveController’.  This will launch the raspi-config utility. Select “5  Interfacing Options” :
-
-![Fig. 1](images/fig_1.jpg)
-
-
-Highlight the P7 1-Wire option and activate &lt;Select&gt;:
-
-![Fig. 2](images/fig_2.jpg)
-
-
-Select and activate &lt;Yes&gt;:
-
-![Fig. 3](images/fig_3.jpg)
-
-
-Select and activate &lt;Ok&gt;:
-
-![Fig. 4](images/fig_4.jpg)
-
-
-When prompted to reboot, select and activate &lt;Yes&gt;:
-
-![Fig. 5](images/fig_5.jpg)
-
-The Raspberry Pi will reboot and the interface will be enabled ready for use.
+11.	Use `sudo raspi-config` and change the password and timezone of the board.  Also change the Hostname under Network Options to ‘ValveController’.  This will launch the raspi-config utility. Then use `sudo reboot` to reboot the Raspberry Pi Zero W.  The Raspberry Pi will reboot with the new password for user pi and the new Hostname.
 
 12.	Connect to the Pi Zero W using PuTTY on port 22 of the board’s new IP address.  Log in using username ‘pi’ and the password you entered in step 11.
 
@@ -128,7 +104,7 @@ I chose to use a pre-assembled H-Bridge breakout board to drive the valve motor.
 
 The Toshiba TB6612 logic is shown in the table below:
 
-![Fig. 6](images/fig_6.jpg)
+![Fig. 1](images/fig_1.jpg)
 
 I mounted a prototyping daughter board on the Raspberry Pi Zero W, and mounted the Adafruit TB6612 Breakout Board on the daughter board.  I connected the Raspberry Pi Zero W GPIO pins to the Adafruit TB6612 Breakout Board as follows:
 
@@ -141,7 +117,7 @@ PWM=L:  Short Brake|BCM13|PWMA
 ### Part IV:  Controller to Valve Wiring.
 I chose a 5-pin DIN connector for the wiring between the controller and the valve.  The pinouts for such a connector are as shown in the figure below:
 
-![Fig. 7](images/fig_7.jpg)
+![Fig. 72](images/fig_2.jpg)
 
 The pins are assigned as follows:
 
