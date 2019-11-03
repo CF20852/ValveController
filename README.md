@@ -78,7 +78,7 @@ interface wlan0
 fallback static_wlan0
 ```
 
-11.	Use `sudo raspi-config` to launch the raspi-config utility. Change the password and timezone of the board.  Also change the Hostname under Network Options to ‘ValveController’.  Then use `sudo reboot` to reboot the Raspberry Pi Zero W.  The Raspberry Pi will reboot with the new password for user pi and the new Hostname.
+11.	Use `sudo raspi-config` to launch the raspi-config utility.  Change the password and timezone of the board.  Also change the Hostname under Network Options to ‘ValveController’.  Then use `sudo reboot` to reboot the Raspberry Pi Zero W.  The Raspberry Pi will reboot with the new password for user pi and the new Hostname.
 
 12.	Connect to the Pi Zero W using PuTTY on port 22 of the board’s new IP address.  Log in using username ‘pi’ and the password you entered in step 11.
 
