@@ -3,6 +3,8 @@ This project implements a motorized ball valve controlled by a Raspberry Pi Zero
 
 This description is not intended for complete noobs.  In order to reproduce the valve control system, you'll have to know some basic electronics, including how to solder small wires.  In addition, you'll have to have some basic Linux and Python 3 skills, and know how to communicate with the Raspberry Pi Zero W over a network connection.  (PuTTY and FileZilla are very helpful tools.)  Finally, in order to install the valve, you'll have to either have some basic home plumbing skills or hire a plumber.  Don't forget the pipe dope (thread sealant)!
 
+I'd like to express my appreciation to Rui Santos at [Random Nerd Tutorials](https://randomnerdtutorials.com/20-easy-raspberry-pi-projects-book/) for the tutorial on a [Raspberry Pi Web Server using Flask to Control GPIOs](https://randomnerdtutorials.com/raspberry-pi-web-server-using-flask-to-control-gpios/), which I used as the starting point on my learning curve for this project.
+
 The motorized ball valve I chose for this project is a U.S. Solid USS-MSV00016 , available from Amazon.com.
 
 The pinouts for this valve are:
